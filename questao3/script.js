@@ -32,7 +32,7 @@ function exibirTransacao() {
    
     const valorNovaTransacao = transacoes[transacoes.length-1];
     // Checa se o saldo é positivo/negativo e coloca sua respectiva classe
-    classeTransacao = (checaValorPositivo(valorNovaTransacao.valor)) ? 'transacaoPositiva' : 'transacaoNegativa';
+    classeTransacao = (valorNovaTransacao.valor >= 0) ? 'transacaoPositiva' : 'transacaoNegativa';
 
     const novaTransacao = document.createElement("tr");
     novaTransacao.classList.add(classeTransacao);
@@ -50,9 +50,5 @@ function exibirTransacao() {
     }, 0);
 
     somaTransacoes.textContent = `R$ ${somaTotalTransacoes}`;
-}
-
-
-function checaValorPositivo(numero) {
-    return (numero >= 0) ? 1 : 0
+    console.log(transacoes)
 }
