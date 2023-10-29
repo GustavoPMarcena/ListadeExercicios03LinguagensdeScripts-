@@ -59,6 +59,7 @@ body{
 #buttonInput {
     width: 150px;
     height: 35px;
+    cursor: pointer;
 }
 
 /* Questão 2 */
@@ -96,4 +97,57 @@ label {
     padding: .5rem;
 }
 
-/* Proximas questões */
+/* Questão 3 */
+
+#descriptionInput, #valueInput {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+/* 'transacaoPositiva' : 'transacaoNegativa'; */
+
+.transacaoPositiva {
+    background-color: green;
+    color: white;
+}
+
+.transacaoNegativa {
+    background-color: red;
+    color: white;
+}
