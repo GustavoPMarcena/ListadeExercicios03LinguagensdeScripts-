@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Atividade Questão 3</title>
 </head>
+
 <body>
-    
+    <main>
+        <div class="title">
+            <h1>Linguagens de Script - 3° Questão</h1>
+            <p>Gustavo Pereira Marcena da Cruz</p>
+        </div>
+        <div class="container">
+            <h2>Adicione uma transação: </h1>
+                <div class="content">
+                    <form>
+                        <div class="inputs" id="inputsQ2">
+                            <label for="description">Descrição:</label>
+                            <input name="description" id="descriptionInput" type="text">
+                            <label for="value">Valor:</label>
+                            <input name="value" id="valueInput" type="number">
+                            <button id="buttonInput">Adicionar</button>
+                        </div>
+                    </form>
+                </div>
+                <h2>Transações adicionadas:</h1>
+                    <table id="transactionTable"class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody id="transactionBody">
+   
+                        </tbody>
+                        <thead>
+                            <tr>
+                              <th scope="col">Saldo total:</th>
+                              <th id="transactionSum" scope="col">0</th>
+                            </tr>
+                          </thead>
+                      </table>
+               </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
+
 </html>

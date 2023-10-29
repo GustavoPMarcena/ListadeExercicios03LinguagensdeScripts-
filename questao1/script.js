@@ -7,9 +7,10 @@ inputBotao.addEventListener("click", () => {
     const valorData = document.getElementById("dateInput").value;
     if (valorData && valorTexto){
         adicionarEvento(valorTexto, valorData);
+        document.getElementById("eventInput").value = '';
+        document.getElementById("dateInput").value = '';    
     }
-    document.getElementById("eventInput").value = '';
-    document.getElementById("dateInput").value = '';
+    console.log(eventos);
 })
 
 function adicionarEvento(texto, data) {
@@ -19,8 +20,7 @@ function adicionarEvento(texto, data) {
 }
 
 function mostrarEventos() {
-    parentDiv.replaceChildren();
-        
+    parentDiv.replaceChildren(); 
     eventos.forEach(element => {
         const divEvento = document.createElement("div");
         divEvento.classList.add("events");
@@ -33,7 +33,7 @@ function mostrarEventos() {
 
 function formatarData(data) {
     let ano = data.getFullYear();
-    let mes = data.getMonth();
+    let mes = data.getMonth() + 1; // +1 porque retorna o mes de 0 a 11
     let dia =  data.getDate();
     
     let horas = data.toLocaleTimeString();

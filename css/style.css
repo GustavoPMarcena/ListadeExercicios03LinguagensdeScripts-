@@ -41,6 +41,7 @@ body{
 
 .events {
     text-align: center;
+    font-size: 1.4rem;
     color: white;
     padding: 1rem 0px;
     border-bottom: 1px solid white;
@@ -58,6 +59,95 @@ body{
 #buttonInput {
     width: 150px;
     height: 35px;
+    cursor: pointer;
 }
 
-/* Proximas questões */
+/* Questão 2 */
+
+label {
+    width: 100%;
+    display: block;
+}
+
+#inputsQ2 {
+    display: block;
+}
+
+#nameInput, #balanceInput, #documentInput {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#clientsDiv {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.clientes {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.clientes button {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+/* Questão 3 */
+
+#descriptionInput, #valueInput {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+/* 'transacaoPositiva' : 'transacaoNegativa'; */
+
+.transacaoPositiva {
+    background-color: green;
+    color: white;
+}
+
+.transacaoNegativa {
+    background-color: red;
+    color: white;
+}
